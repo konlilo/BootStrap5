@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>變數宣告</title>
+    <style>
+      /*定義在根部元件 ， 屬於全域變數 */
+      :root {
+        /* -- 表示宣告變數 */
+        --primary: #69f0ae;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 5px solid black;
+      }
+
+      .bg-color {
+        /* var() :表示使用變數 */
+        background-color: var(--primary);
+      }
+
+      /* 進階技巧 */
+      /* 區域變數 */
+      .local {
+        --primary: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box bg-color"></div>
+    <hr />
+    下面為區域變數
+    <hr />
+    <div class="local">
+      <div class="box bg-color"></div>
+    </div>
+  </body>
+</html>

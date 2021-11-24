@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>em與rem</title>
+    <style>
+      /* rem 只受 html和root引響 */
+      :root {
+        font-size: 20px;
+      }
+
+      .em2 {
+        font-size: 2em;
+      }
+      .rem2 {
+        font-size: 2rem;
+      }
+
+      .py-1 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aspernatur
+      ipsam dolorem dolorum quidem saepe, itaque illum beatae? Accusamus magni
+      blanditiis, dolore dolores esse sint architecto atque molestiae eveniet
+      quaerat.
+    </div>
+    <hr />
+    <div class="em2">
+      <p>em2</p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+      cumque molestiae. Impedit officiis repellendus reprehenderit vero tempora
+      inventore dolorum repudiandae dolorem ex, quo illum, beatae minus ad,
+      facere eius sunt.
+      <strong class="em2"
+        >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda,
+        voluptatibus accusamus. Deserunt laborum officiis reprehenderit,
+        laboriosam, aliquid quae delectus quisquam accusamus quibusdam, dolore
+        aspernatur deleniti velit tenetur pariatur error ipsa?</strong
+      >
+    </div>
+    <hr />
+    <div class="rem2">
+      <p>rem2</p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+      praesentium, voluptatum maxime molestias, exercitationem reprehenderit
+      tempora inventore porro suscipit perspiciatis enim consequatur facere
+      eaque natus facilis assumenda tenetur aspernatur recusandae.
+      <strong class="rem2"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        explicabo nobis alias voluptate ea sint perferendis quidem autem nulla.
+        Unde explicabo ratione officia, accusantium quas eum harum nobis
+        accusamus dolor.</strong
+      >
+    </div>
+  </body>
+</html>
